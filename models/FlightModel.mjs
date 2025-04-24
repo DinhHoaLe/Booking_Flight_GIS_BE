@@ -29,6 +29,17 @@ const flightSchema = new mongoose.Schema(
       required: true,
       default: "scheduled",
     },
+    location: {
+      type: {
+        type: String,
+        enum: ['Point'],
+        required: true
+      },
+      coordinates: {
+        type: [Number],
+        required: true
+      }
+    },
   },
   { timestamps: true }
 );
