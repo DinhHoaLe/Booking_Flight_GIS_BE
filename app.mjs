@@ -29,6 +29,7 @@ const corsConfig = {
     "http://localhost:3030",
     "https://booking-admin-fe.onrender.com",
     "https://booking-mindxtc.netlify.app",
+    "https://booking-fe-4rk8.onrender.com",
   ],
   methods: ["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: [
