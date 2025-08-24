@@ -31,7 +31,12 @@ const corsConfig = {
     "https://booking-mindxtc.netlify.app",
   ],
   methods: ["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization", "Accept", "X-Requested-With"],
+  allowedHeaders: [
+    "Content-Type",
+    "Authorization",
+    "Accept",
+    "X-Requested-With",
+  ],
   credentials: true,
 };
 
@@ -44,7 +49,7 @@ const App = async () => {
   app.use(cors(corsConfig));
 
   app.options("*", cors(corsConfig));
-  
+
   app.use(
     morgan(":method :url :status :res[content-length] - :response-time ms")
   );
